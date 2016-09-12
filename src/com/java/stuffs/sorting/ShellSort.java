@@ -10,13 +10,8 @@ import static java.lang.Math.abs;
  */
 public class ShellSort {
 
-    // divide into smaller arrays
-    // during the smaller divide, sort and regroup, till we have only 1 elements each
-    // perform insertion sort after
-
     public static void main (String[] args) {
-        List<Integer> someArray =
-                Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32, 133, 76, 24, 45, 53, 64, 552,563,205);
+        List<Integer> someArray = Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32, 133, 76, 24, 45, 53, 64, 552,563,205, 90);
         long time = System.nanoTime();
 
         int interval = abs(someArray.size() / 3);
