@@ -1,14 +1,4 @@
-/***********************************************************************************************************************
- * FileName - MergeSort.java
- * <p>
- * (c) Disney. All rights reserved.
- * <p>
- * $Author: okunk001 $
- * $Revision: #1 $
- * $Change:  $
- * $Date: 8/31/2016 $
- **********************************************************************************************************************/
-package com.gtest.sorting;
+package com.java.stuffs.sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;

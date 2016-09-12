@@ -1,17 +1,7 @@
-/***********************************************************************************************************************
- * FileName - ShellSort.java
- * <p>
- * (c) Disney. All rights reserved.
- * <p>
- * $Author: okunk001 $
- * $Revision: #1 $
- * $Change:  $
- * $Date: 9/12/2016 $
- **********************************************************************************************************************/
-package com.gtest.sorting;
+package com.java.stuffs.sorting;
 
 /**
- * Created by okunk001 on 9/12/2016.
+ * ShellSort.
  */
 public class ShellSort {
 
