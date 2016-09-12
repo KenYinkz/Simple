@@ -9,10 +9,8 @@ import java.util.List;
 public class InsertionSort {
 
     public static void main(String[] args) {
-        List<Integer> someArray = Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19);
-        long time = System.currentTimeMillis();
-
-        System.out.printf("%n Before sort = %s", someArray);
+        List<Integer> someArray = Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32);
+        long time = System.nanoTime();
 
         int value;
         int position;
@@ -30,7 +28,7 @@ public class InsertionSort {
 
         System.out.printf("%n After sort = %s; %n%n Sorted in %d secs %n%n",
                 someArray,
-                System.currentTimeMillis() - time
+                System.nanoTime() - time
         );
     }
 

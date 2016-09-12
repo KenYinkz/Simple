@@ -1,11 +1,43 @@
 package com.java.stuffs.sorting;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static java.lang.Math.abs;
+
 /**
  * ShellSort.
  */
 public class ShellSort {
 
-    // divide into smaller arrays till we have only 1 elements each
-    //
+    // divide into smaller arrays
+    // during the smaller divide, sort and regroup, till we have only 1 elements each
+    // perform insertion sort after
+
+    public static void main (String[] args) {
+        List<Integer> someArray = Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32);
+        long time = System.nanoTime();
+
+        int interval = abs(someArray.size() / 3);
+
+        while (interval > 0) {
+            for (int a = interval; a < someArray.size(); a++) {
+                int value = someArray.get(a);
+                int inner = a;
+                while (inner > interval - 1 && someArray.get(inner - interval) >= value) {
+                    someArray.set(inner, someArray.get(inner - interval));
+                    inner = inner - interval;
+                }
+                someArray.set(inner, value);
+            }
+            interval = abs(interval / 2);
+        }
+
+        System.out.printf("%n After sort = %s; %n%n Sorted in %d secs %n%n",
+                someArray,
+                System.nanoTime() - time
+        );
+    }
 
 }
