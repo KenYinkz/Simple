@@ -1,6 +1,5 @@
 package com.java.stuffs.sorting;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,7 +15,8 @@ public class ShellSort {
     // perform insertion sort after
 
     public static void main (String[] args) {
-        List<Integer> someArray = Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32);
+        List<Integer> someArray =
+                Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32, 133, 76, 24, 45, 53, 64, 552,563,205);
         long time = System.nanoTime();
 
         int interval = abs(someArray.size() / 3);
