@@ -47,9 +47,6 @@ public class QuickSort {
         List<Integer> someArray = Arrays.asList(74, 33, 27, 35, 10, 15, 30, 50, 82, 19, 93, 32, 133, 76, 24, 45, 53, 64, 552,563,205, 90);
 
         long time = System.nanoTime();
-
-        System.out.printf("%n Before sort = %s", someArray);
-
         someArray = quickSort(someArray, 0, someArray.size() - 1);
 
         System.out.printf("%n After sort = %s; %n%n Sorted in %d secs %n%n",
