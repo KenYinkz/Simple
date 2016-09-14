@@ -27,6 +27,8 @@ public class InterpolationSearch {
             System.exit(1);
         }
 
+        int d = 2 % 20;
+
         while (index < 0) {
 
             mid = low + ((high - low) / (someArray.get(high) - someArray.get(low))) * (search - someArray.get(low));
