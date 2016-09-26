@@ -1,4 +1,4 @@
-package com.java.stuffs.com.java.stuffs.misc;
+package com.java.stuffs.misc;
 
 import java.util.StringTokenizer;
 
