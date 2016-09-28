@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * InsertionSort.
+ * InsertionSort. O(n sq.)
  */
 public class InsertionSort {
 

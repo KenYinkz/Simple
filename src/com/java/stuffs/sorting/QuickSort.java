@@ -4,13 +4,14 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * QuickSort.
+ * QuickSort. O (n log n)
  */
 public class QuickSort {
 
     static List<Integer> quickSort(List<Integer> arr, int lower, int upper){
 
         if (lower < upper) {
+
             int i = lower;
             int j = upper;
             int pivot = arr.get(upper);

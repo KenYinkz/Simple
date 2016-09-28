@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * BubbleSort.
+ * BubbleSort. O(n sq.)
  */
 public class BubbleSort {
     public static void main(String[] args) {

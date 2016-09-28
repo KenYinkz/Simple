@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * SelectionSort
+ * SelectionSort O (n sq.)
  */
 public class SelectionSort {
 

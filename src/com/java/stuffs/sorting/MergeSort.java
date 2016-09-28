@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * MergeSort
+ * MergeSort O(n log n)
  */
 public class MergeSort {
 
@@ -14,6 +14,7 @@ public class MergeSort {
             return givenList;
         }
         int size = Math.abs(givenList.size() / 2);
+
         List<Integer> firstPart = new ArrayList<>(size);
         List<Integer> secondPart = new ArrayList<>(givenList.size() - size);
         for (int a = 0; a < size; a++) {
